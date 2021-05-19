@@ -9,6 +9,7 @@ services:
     port: 3000
     path: multirepo-frontend-sample
     build:
+      - export REACT_APP_BACKEND=${REPLOY_backend}
       - yarn config set cache-folder $(pwd)/.yarn-cache
       - yarn install --frozen-lockfile
     serve:
