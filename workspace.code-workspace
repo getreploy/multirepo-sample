@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "Backend",
+			"path": "./multirepo-backend-sample"
+		},
+		{
+			"name": "Frontend",
+			"path": "./multirepo-frontend-sample"
+		},
+		
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true
+	}
+}
