@@ -1,0 +1,8 @@
+[submodule "multirepo-frontend-sample"]
+	path = multirepo-frontend-sample
+	url = git@github.com:getreploy/multirepo-frontend-sample.git
+	branch = main
+[submodule "multirepo-backend-sample"]
+	path = multirepo-backend-sample
+	url = git@github.com:getreploy/multirepo-backend-sample.git
+	branch = main

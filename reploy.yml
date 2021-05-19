@@ -1,0 +1,11 @@
+services:
+  frontend:
+    runtime: reactjs
+    port: 3000
+    build:
+      - ls
+  backend:
+    runtime: go
+    port: 8080
+    build:
+      - ls
