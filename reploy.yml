@@ -7,6 +7,7 @@ services:
   frontend:
     runtime: reactjs
     port: 3000
+    path: multirepo-frontend-sample
     build:
       - yarn config set cache-folder $(pwd)/.yarn-cache
       - yarn install --frozen-lockfile
@@ -18,7 +19,7 @@ services:
   backend:
     runtime: go
     port: 8080
-
+    path: multirepo-backend-sample
     build:
       - go mod download
       - go build .
