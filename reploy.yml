@@ -14,6 +14,7 @@ services:
       - yarn install --frozen-lockfile
     serve:
       - export REACT_APP_BACKEND=${REPLOY_backend}
+      - echo $REACT_APP_BACKEND
       - yarn start
     environment:
       HOST: 0.0.0.0
