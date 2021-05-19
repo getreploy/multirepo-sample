@@ -2,7 +2,7 @@
 
 - _Important_ when adding a multi repo project on reploy, you must add permission to access all the individual repos when installing reploy on github. You can always click 'install reploy' again to add repos you missed.
 
-  - If you miss this step, Reploy will fail to do a recursive clone.
+  - If you miss this step, Reploy will fail to do a recursive clone. You'll see an error on the cache -> retrieval step for cloning.
 
 - This is an example project showing one approach to multi-repo staging environments across different branches.
 - This top-level git repo has a `reploy.yml` to spin up all the services.
