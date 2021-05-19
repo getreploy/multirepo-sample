@@ -8,4 +8,7 @@ services:
     runtime: go
     port: 8080
     build:
-      - ls
+      - go mod download
+      - go build .
+    serve:
+      - ./multirepo-backend-sample
