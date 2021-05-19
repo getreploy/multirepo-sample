@@ -11,6 +11,7 @@ services:
     build:
       - git log -1
       - export REACT_APP_BACKEND=${REPLOY_backend}
+      - echo $REACT_APP_BACKEND
       - yarn config set cache-folder $(pwd)/.yarn-cache
       - yarn install --frozen-lockfile
     serve:
