@@ -1,3 +1,6 @@
+cache:
+  - file: multirepo-backend-sample/go.sum
+    path: .gopath
 services:
   frontend:
     runtime: reactjs
@@ -12,3 +15,5 @@ services:
       - go build .
     serve:
       - ./multirepo-backend-sample
+    environment:
+      GOPATH: /local/.gopath
