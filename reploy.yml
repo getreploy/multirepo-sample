@@ -27,5 +27,6 @@ services:
       - go build .
     serve:
       - ./multirepo-backend-sample
+    health: /health
     environment:
       GOPATH: /local/.gopath
