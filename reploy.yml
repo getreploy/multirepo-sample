@@ -1,4 +1,6 @@
 cache:
+  - file: multirepo-frontend-sample/yarn.lock
+    path: multirepo-frontend-sample/.yarn-cache
   - file: multirepo-backend-sample/go.sum
     path: .gopath
 services:
@@ -6,10 +8,17 @@ services:
     runtime: reactjs
     port: 3000
     build:
-      - ls
+      - yarn config set cache-folder $(pwd)/.yarn-cache
+      - yarn install --frozen-lockfile
+    serve:
+      - yarn start
+    environment:
+      HOST: 0.0.0.0
+      CI: true
   backend:
     runtime: go
     port: 8080
+
     build:
       - go mod download
       - go build .
