@@ -14,8 +14,4 @@
 
 # How to test specific branches in staging
 
-- TODO proper docs
-  - basically, make a PR on this top level repo with the submodules checked out on the branches you want to test (or just leave them on the default branch to not change anything)
-
-
-changes for a test PR!!!
+- check out the submodules to the branches that you wish to test. or, you can leave them on the default branch.

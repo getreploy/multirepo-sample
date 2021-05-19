@@ -10,7 +10,6 @@ services:
     path: multirepo-frontend-sample
     build:
       - git log -1
-      - export REACT_APP_BACKEND=${REPLOY_backend}
       - yarn config set cache-folder $(pwd)/.yarn-cache
       - yarn install --frozen-lockfile
     serve:
